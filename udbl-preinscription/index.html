@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Plateforme officielle de pré-inscription de l'Université Don Bosco de Lubumbashi (UDBL). Candidatez en ligne, suivez votre dossier et obtenez des réponses instantanées." />
+  <title>UDBL - Plateforme de Pré-inscription</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-brand">
+      <a href="index.html" class="nav-logo" aria-label="Retour à l'accueil">
+        <img src="logo/logo.jpg" alt="Logo UDBL" />
+      </a>
+      <a href="index.html" class="nav-name" style="text-decoration:none;">UDBL <span>PreInscription</span></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="comment ça marche.html">Comment ça marche</a></li>
+      <li><a href="fonctionnalités.html">Fonctionnalités</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="preinscription.html" class="nav-cta">Pré-inscription</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <div class="badge-dot"></div>
+          Plateforme officielle UDBL - 2025/2026
+        </div>
+
+        <h1>Candidatez à l'<em>UDBL</em><br />depuis chez vous</h1>
+
+        <p class="hero-desc">
+          Pré-inscrivez-vous en ligne, obtenez des réponses instantanées
+          grâce à notre chatbot intelligent et suivez votre dossier
+          en temps réel sans vous déplacer.
+        </p>
+
+        <div class="hero-actions">
+          <a href="preinscription.html" class="btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5">
+              <path d="M12 5v14M5 12l7 7 7-7" />
+            </svg>
+            Commencer ma pré-inscription
+          </a>
+          <a href="comment ça marche.html" class="btn-secondary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 8v4M12 16h.01" />
+            </svg>
+            Voir le parcours
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-widget">
+        <div class="widget-header">
+          <div class="widget-avatar">🎓</div>
+          <div class="widget-info">
+            <h4>Assistant UDBL</h4>
+            <p>Répond à toutes vos questions</p>
+          </div>
+          <div class="widget-status">
+            <div class="status-dot"></div>
+            En ligne
+          </div>
+        </div>
+
+        <div class="widget-messages" id="chat-messages">
+          <div class="msg msg-bot">
+            👋 Bonjour ! Je suis l'assistant de l'UDBL.
+            Comment puis-je vous aider aujourd'hui ?
+          </div>
+          <div class="msg msg-user">
+            Quelles filières sont disponibles ?
+          </div>
+          <div class="msg msg-bot">
+            L'UDBL propose 4 grandes filières :<br /><br />
+            📚 Gestion &amp; Ingénierie Financières<br />
+            💻 Sciences Informatiques<br />
+            🌍 Sciences de l'Homme &amp; Société<br />
+            ✝️ Théologie
+          </div>
+        </div>
+
+        <div class="widget-suggestions">
+          <button class="suggestion" data-query="Documents requis">📄 Documents requis</button>
+          <button class="suggestion" data-query="Frais d'inscription">💰 Frais d'inscription</button>
+          <button class="suggestion" data-query="Dates limites">📅 Dates limites</button>
+          <button class="suggestion" data-query="Clubs universitaires">🏫 Clubs universitaires</button>
+        </div>
+
+        <div class="widget-input">
+          <input type="text" id="chat-input" placeholder="Posez votre question..." />
+          <button class="widget-send" id="chat-send">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                 stroke="white" stroke-width="2.5">
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light quick-links" id="site-map">
+      <div class="section-tag">Navigation rapide</div>
+      <h2 class="section-title">Accéder aux autres pages du site</h2>
+      <p class="section-subtitle">
+        Tout le site est maintenant relié. Utilisez ces accès directs pour passer
+        d'une page à l'autre sans perdre le fil.
+      </p>
+
+      <div class="quick-links-grid">
+        <a class="quick-link-card" href="comment ça marche.html">
+          <span class="quick-link-kicker">Page 01</span>
+          <h3>Comment ça marche</h3>
+          <p>Découvrez le parcours complet, étape par étape, depuis la création du dossier jusqu'à la confirmation.</p>
+        </a>
+        <a class="quick-link-card" href="fonctionnalités.html">
+          <span class="quick-link-kicker">Page 02</span>
+          <h3>Fonctionnalités</h3>
+          <p>Consultez les outils mis à votre disposition : chatbot, suivi en temps réel, notifications et plus encore.</p>
+        </a>
+        <a class="quick-link-card" href="preinscription.html">
+          <span class="quick-link-kicker">Page 03</span>
+          <h3>Pré-inscription</h3>
+          <p>Accédez directement au formulaire pour lancer votre demande de candidature à l'UDBL.</p>
+        </a>
+      </div>
+    </section>
+
+    <div class="stats-band">
+      <div class="stat-item">
+        <span class="stat-num">4<span>+</span></span>
+        <span class="stat-label">Filières disponibles</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <span class="stat-num">24<span>/7</span></span>
+        <span class="stat-label">Disponibilité de la plateforme</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <span class="stat-num">80<span>%+</span></span>
+        <span class="stat-label">Questions répondues par le chatbot</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <span class="stat-num">0</span>
+        <span class="stat-label">Déplacement requis pour candidater</span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-brand" style="margin-bottom:10px">
+          <a href="index.html" class="nav-logo" aria-label="Retour à l'accueil">
+            <img src="logo/logo.jpg" alt="Logo UDBL" />
+          </a>
+          <a href="index.html" class="nav-name" style="text-decoration:none;">UDBL <span>PreInscription</span></a>
+        </div>
+        <p>Plateforme officielle de pré-inscription de l'Université Don Bosco de Lubumbashi.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="comment ça marche.html">Comment ça marche</a></li>
+          <li><a href="fonctionnalités.html">Fonctionnalités</a></li>
+          <li><a href="preinscription.html">Pré-inscription</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:inscriptions@udbl.ac.cd">inscriptions@udbl.ac.cd</a></li>
+          <li><a href="https://www.udbl.ac.cd" target="_blank" rel="noopener">www.udbl.ac.cd</a></li>
+          <li><a href="#">Lubumbashi, Haut-Katanga</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Filières</h4>
+        <ul>
+          <li><a href="fonctionnalités.html">Sciences Informatiques</a></li>
+          <li><a href="fonctionnalités.html">Gestion Financière</a></li>
+          <li><a href="fonctionnalités.html">Sciences Humaines</a></li>
+          <li><a href="fonctionnalités.html">Théologie</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Université Don Bosco de Lubumbashi - Tous droits réservés</p>
+      <p>Conçu par HERADI KIYOMBO NICKSON - L3 MSI</p>
+    </div>
+  </footer>
+
+  <script src="js/chatbot.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

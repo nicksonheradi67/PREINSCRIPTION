@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tableau de bord UDBL PreInscription - Suivez vos candidatures et gérez vos dossiers en ligne." />
+  <title>Dashboard - UDBL PreInscription</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation principale -->
+  <nav>
+    <div class="nav-brand">
+      <a href="index.html" class="nav-logo" aria-label="Retour à l'accueil">
+        <img src="logo/logo.jpg" alt="Logo UDBL" />
+      </a>
+      <a href="index.html" class="nav-name" style="text-decoration:none;">UDBL <span>PreInscription</span></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="comment ça marche.html">Comment ça marche</a></li>
+      <li><a href="fonctionnalités.html">Fonctionnalités</a></li>
+      <li><a href="dashboard.html" aria-current="page">Dashboard</a></li>
+      <li><a href="preinscription.html" class="nav-cta">Pré-inscription</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Section de bienvenue -->
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <div class="hero-badge anim-fade-up">
+          <div class="badge-dot"></div>
+          Espace personnel - 2025/2026
+        </div>
+        <h1 class="page-title anim-fade-up anim-delay-1">Bienvenue sur votre Dashboard</h1>
+        <p class="page-lead anim-fade-up anim-delay-2">
+          Suivez l'état de vos candidatures, consultez vos documents et interagissez
+          avec notre assistant intelligent pour toutes vos questions.
+        </p>
+        <div class="page-hero-actions anim-fade-up anim-delay-3">
+          <a href="#candidatures" class="btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" />
+            </svg>
+            Voir mes candidatures
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section statistiques -->
+    <section class="section section-light">
+      <div class="section-tag anim-fade-up">Aperçu général</div>
+      <h2 class="section-title anim-fade-up anim-delay-1">Vos statistiques</h2>
+      <p class="section-subtitle anim-fade-up anim-delay-2">
+        Un résumé de vos candidatures et de l'activité récente sur votre compte.
+      </p>
+
+      <div class="stats-band anim-fade-up anim-delay-3">
+        <div class="stat-item">
+          <span class="stat-num">3 <span>candidatures</span></span>
+          <span class="stat-label">Total soumises</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <span class="stat-num">1 <span>validée</span></span>
+          <span class="stat-label">Dossier complet</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <span class="stat-num">2 <span>en attente</span></span>
+          <span class="stat-label">Documents manquants</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <span class="stat-num">0 <span>notification</span></span>
+          <span class="stat-label">Non lue</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section candidatures -->
+    <section id="candidatures" class="section section-dark">
+      <div class="section-tag anim-fade-up">Suivi des dossiers</div>
+      <h2 class="section-title anim-fade-up anim-delay-1">Mes candidatures</h2>
+      <p class="section-subtitle anim-fade-up anim-delay-2">
+        Consultez l'état de vos dossiers de pré-inscription et les actions requises.
+      </p>
+
+      <div class="candidatures-container anim-fade-up anim-delay-3">
+        <div class="candidature-card">
+          <div class="candidature-header">
+            <div class="candidature-info">
+              <h3>Sciences Informatiques </h3>
+              <p>Soumise le 15 octobre 2025</p>
+            </div>
+            <div class="candidature-status status-pending">
+              <span class="status-dot"></span>
+              En attente de documents
+            </div>
+          </div>
+          <div class="candidature-actions">
+            <button class="btn-secondary">Ajouter documents</button>
+            <button class="btn-secondary">Voir détails</button>
+          </div>
+        </div>
+
+        <div class="candidature-card">
+          <div class="candidature-header">
+            <div class="candidature-info">
+              <h3>Gestion & Ingénierie Financières</h3>
+              <p>Soumise le 10 octobre 2025</p>
+            </div>
+            <div class="candidature-status status-validated">
+              <span class="status-dot"></span>
+              Dossier validé
+            </div>
+          </div>
+          <div class="candidature-actions">
+            <button class="btn-secondary">Télécharger reçu</button>
+            <button class="btn-secondary">Voir détails</button>
+          </div>
+        </div>
+
+        <div class="candidature-card">
+          <div class="candidature-header">
+            <div class="candidature-info">
+              <h3>Sciences de l'Homme & Société</h3>
+              <p>Soumise le 5 octobre 2025</p>
+            </div>
+            <div class="candidature-status status-pending">
+              <span class="status-dot"></span>
+              Documents incomplets
+            </div>
+          </div>
+          <div class="candidature-actions">
+            <button class="btn-secondary">Compléter dossier</button>
+            <button class="btn-secondary">Voir détails</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section activité récente -->
+    <section class="section section-light">
+      <div class="section-tag anim-fade-up">Historique</div>
+      <h2 class="section-title anim-fade-up anim-delay-1">Activité récente</h2>
+      <p class="section-subtitle anim-fade-up anim-delay-2">
+        Les dernières actions effectuées sur votre compte.
+      </p>
+
+      <div class="activity-list anim-fade-up anim-delay-3">
+        <div class="activity-item">
+          <div class="activity-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" />
+            </svg>
+          </div>
+          <div class="activity-content">
+            <p><strong>Document ajouté :</strong> Copie du baccalauréat pour Sciences Informatiques</p>
+            <span class="activity-time">Il y a 2 jours</span>
+          </div>
+        </div>
+
+        <div class="activity-item">
+          <div class="activity-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 19l7-7 7 7M5 12h14M12 5v14" />
+            </svg>
+          </div>
+          <div class="activity-content">
+            <p><strong>Candidature soumise :</strong> Gestion & Ingénierie Financières</p>
+            <span class="activity-time">Il y a 5 jours</span>
+          </div>
+        </div>
+
+        <div class="activity-item">
+          <div class="activity-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+            </svg>
+          </div>
+          <div class="activity-content">
+            <p><strong>Question posée :</strong> "Quels sont les documents requis ?"</p>
+            <span class="activity-time">Il y a 1 semaine</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-brand" style="margin-bottom:10px">
+          <a href="index.html" class="nav-logo" aria-label="Retour à l'accueil">
+            <img src="logo/logo.jpg" alt="Logo UDBL" />
+          </a>
+          <a href="index.html" class="nav-name" style="text-decoration:none;">UDBL <span>PreInscription</span></a>
+        </div>
+        <p>Plateforme officielle de pré-inscription de l'Université Don Bosco de Lubumbashi.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="comment ça marche.html">Comment ça marche</a></li>
+          <li><a href="fonctionnalités.html">Fonctionnalités</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="preinscription.html">Pré-inscription</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:inscriptions@udbl.ac.cd">inscriptions@udbl.ac.cd</a></li>
+          <li><a href="https://www.udbl.ac.cd" target="_blank" rel="noopener">www.udbl.ac.cd</a></li>
+          <li><a href="#">Lubumbashi, Haut-Katanga</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Filières</h4>
+        <ul>
+          <li><a href="fonctionnalités.html">Sciences Informatiques</a></li>
+          <li><a href="fonctionnalités.html">Gestion & Finances</a></li>
+          <li><a href="fonctionnalités.html">Sciences Humaines</a></li>
+          <li><a href="fonctionnalités.html">Théologie</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Université Don Bosco de Lubumbashi. Tous droits réservés.</p>
+      <p>Plateforme développée avec ❤️ pour la communauté estudiantine.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html></content>
+<parameter name="filePath">c:\Users\nicks\Desktop\udbl-preinscription\udbl-preinscription\dashboard.html
